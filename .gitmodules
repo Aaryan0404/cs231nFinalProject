@@ -1,0 +1,3 @@
+[submodule "track_anything/track_anything/Track-Anything"]
+	path = track_anything/track_anything/Track-Anything
+	url = https://github.com/gaomingqi/Track-Anything.git
