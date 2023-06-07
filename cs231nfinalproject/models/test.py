@@ -307,4 +307,4 @@ if __name__ == '__main__':
     net = network.PV_LSTM(args).to(args.device)
 
     # training
-    test_3d(args, net, test_loader)
+    test_2d(args, net, test_loader)
