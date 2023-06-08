@@ -38,13 +38,12 @@ def parse_results(result):
     bboxes_coords = []
     # For each class's result
     for bbox in bboxs[0]:
-        print(bbox)
+        # calculate bbox confidence
+        bbox_confidence = bbox[4]
+        
         # from an array of five elements, extract the first four
         # which are the bounding box coordinates
         bbox = bbox[:4]
-
-        # calculate bbox confidence
-        bbox_confidence = bbox[4]
 
         if (bbox_confidence > 0.8):
             bboxes_coords.append(bbox)
