@@ -34,8 +34,7 @@ def parse_args():
 
 def parse_results(result):
     # Initialize an empty list to store all bounding boxes and scores
-    print(result)
-    return 0
+    bboxs = result[0]
     bboxes_coords = []
     # For each class's result
     for bbox in bboxs:
@@ -59,7 +58,7 @@ def mock_detector(model, image_name, output_dir):
     result_name = os.path.join(output_dir, result_name)
     show_result(image, results, model.CLASSES, out_file=result_name)
 
-    return {image_name: results}
+    return results
 
 def create_base_dir(dest):
     basedir = os.path.dirname(dest)
