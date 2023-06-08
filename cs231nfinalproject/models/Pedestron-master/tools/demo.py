@@ -42,7 +42,9 @@ def parse_results(result):
         # from an array of five elements, extract the first four
         # which are the bounding box coordinates
         bbox = bbox[:4]
-        bbox_confidence = bbox[3]
+
+        # calculate bbox confidence
+        bbox_confidence = bbox[4]
 
         if (bbox_confidence > 0.8):
             bboxes_coords.append(bbox)
