@@ -32,23 +32,21 @@ def parse_args():
     args = parser.parse_args()
     return args
 
-def parse_results(results):
+def parse_results(result):
     # Initialize an empty list to store all bounding boxes and scores
-    bboxes_scores = []
+    bboxs = result[0]
 
+    bboxes_coords = []
     # For each class's result
-    for class_result in results:
-        print(f"results = {results}")
-        # For each bounding box
-        for bbox in class_result:
-            # The last element is the score, the others are the coordinates
-            score = float(bbox[-1])
-            bbox = tuple(map(int, bbox[:-1]))
+    for bbox in bboxs:
+        # from an array of five elements, extract the first four
+        # which are the bounding box coordinates
+        bbox = bbox[:4]
 
-            # Append to the list as a tuple
-            bboxes_scores.append((bbox, score))
+        # append the bounding box coordinates to the list
+        bboxes_coords.append(bbox)
 
-    return bboxes_scores
+    return bboxes_coords
 
 
 
@@ -82,19 +80,20 @@ def run_detector_on_dataset():
     model = init_detector(
         args.config, args.checkpoint, device=torch.device('cuda:0'))
     
-    results_dict = {}
+    bbox_dic = {}
     prog_bar = mmcv.ProgressBar(len(eval_imgs))
     for im in eval_imgs:
         result = mock_detector(model, im, output_dir)
-        parsed_results = parse_results(result)
-        results_dict[im] = parsed_results
+        result = parse_results(result)
+        bbox_dic[im] = result
         prog_bar.update()
     
+    
     # Flatten the dictionary into a list of tuples
-    data = [(img_name, *res) for img_name, results in results_dict.items() for res in results]
+    data = [(k, v) for k, v in bbox_dic.items()]
 
     # Convert the list into a DataFrame
-    df = pd.DataFrame(data, columns=["image_name", "bbox", "score"])
+    df = pd.DataFrame(data, columns=["image_name", "bboxs_coords"])
 
     # Write the DataFrame to a CSV file
     df.to_csv(os.path.join(output_dir, 'results.csv'), index=False)
