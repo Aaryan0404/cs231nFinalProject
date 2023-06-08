@@ -40,6 +40,7 @@ def parse_results(results):
     for class_result in results:
         # For each bounding box
         for bbox in class_result:
+            print(f"bbox = {bbox}")  # Debug print
             # The last element is the score, the others are the coordinates
             score = float(bbox[-1])
             bbox = tuple(map(int, bbox[:-1]))
@@ -48,6 +49,7 @@ def parse_results(results):
             bboxes_scores.append((bbox, score))
 
     return bboxes_scores
+
 
 
 
