@@ -10,6 +10,8 @@ import torch
 import glob
 import json
 import mmcv
+import csv
+import pandas as pd
 
 from mmdet.apis import inference_detector, init_detector, show_result
 
@@ -31,7 +33,6 @@ def parse_args():
     return args
 
 
-
 def mock_detector(model, image_name, output_dir):
     image = cv2.imread(image_name)
     results = inference_detector(model, image)
@@ -39,6 +40,8 @@ def mock_detector(model, image_name, output_dir):
     result_name = basename + "_result.jpg"
     result_name = os.path.join(output_dir, result_name)
     show_result(image, results, model.CLASSES, out_file=result_name)
+
+    return {image_name: results}
 
 def create_base_dir(dest):
     basedir = os.path.dirname(dest)
@@ -49,6 +52,7 @@ def run_detector_on_dataset():
     args = parse_args()
     input_dir = args.input_img_dir
     output_dir = args.output_dir
+
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
     print(input_dir)
@@ -57,11 +61,24 @@ def run_detector_on_dataset():
 
     model = init_detector(
         args.config, args.checkpoint, device=torch.device('cuda:0'))
-
+    
+    results_dict = {}
     prog_bar = mmcv.ProgressBar(len(eval_imgs))
     for im in eval_imgs:
-        detections = mock_detector(model, im, output_dir)
+        result = mock_detector(model, im, output_dir)
+        results_dict.update(result)
         prog_bar.update()
+    
+    # Save results to CSV
+    # Flatten the dictionary into a list of tuples
+    data = [(img_name, *bbox) for img_name, result in results_dict.items() for bbox in result]
+    
+    # Convert the list into a DataFrame
+    df = pd.DataFrame(data, columns=["image_name", "bbox", "label", "score"])
+    
+    # Write the DataFrame to a CSV file
+    df.to_csv(os.path.join(output_dir, 'results.csv'), index=False)
+    
 
 if __name__ == '__main__':
     run_detector_on_dataset()
