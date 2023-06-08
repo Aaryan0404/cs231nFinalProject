@@ -74,7 +74,7 @@ def run_detector_on_dataset():
     data = [(img_name, *bbox) for img_name, result in results_dict.items() for bbox in result]
     
     # Convert the list into a DataFrame
-    df = pd.DataFrame(data, columns=["image_name", "bbox", "label", "score"])
+    df = pd.DataFrame(data, columns=["image_name", "bbox"])
     
     # Write the DataFrame to a CSV file
     df.to_csv(os.path.join(output_dir, 'results.csv'), index=False)
