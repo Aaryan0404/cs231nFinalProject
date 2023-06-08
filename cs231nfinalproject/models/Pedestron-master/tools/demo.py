@@ -35,10 +35,10 @@ def parse_args():
 def parse_results(result):
     # Initialize an empty list to store all bounding boxes and scores
     bboxs = result[0]
-    print(bboxs)
     bboxes_coords = []
     # For each class's result
     for bbox in bboxs:
+        print(bbox)
         # from an array of five elements, extract the first four
         # which are the bounding box coordinates
         bbox = bbox[:4]
