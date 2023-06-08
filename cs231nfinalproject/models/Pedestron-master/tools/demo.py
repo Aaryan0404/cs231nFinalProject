@@ -32,6 +32,25 @@ def parse_args():
     args = parser.parse_args()
     return args
 
+def parse_results(results):
+    # Initialize an empty list to store all bounding boxes and scores
+    bboxes_scores = []
+
+    # As the model is specifically trained to detect pedestrians,
+    # results[0] should contain the bounding boxes for the pedestrian class
+    bboxes = results[0]
+    
+    # For each bounding box
+    for bbox in bboxes:
+        # The last element is the score, the others are the coordinates
+        score = float(bbox[-1])
+        bbox = tuple(map(int, bbox[:-1]))
+
+        # Append to the list as a tuple
+        bboxes_scores.append((bbox, score))
+
+    return bboxes_scores
+
 
 def mock_detector(model, image_name, output_dir):
     image = cv2.imread(image_name)
@@ -64,24 +83,21 @@ def run_detector_on_dataset():
     
     results_dict = {}
     prog_bar = mmcv.ProgressBar(len(eval_imgs))
-    int = 0
     for im in eval_imgs:
         result = mock_detector(model, im, output_dir)
-        if (int == 0):
-            print(result)
-            int = 1
-        results_dict.update(result)
+        parsed_results = parse_results(result)
+        results_dict[im] = parsed_results
         prog_bar.update()
     
-    # Save results to CSV
     # Flatten the dictionary into a list of tuples
-    data = [(img_name, *bbox) for img_name, result in results_dict.items() for bbox in result]
-    
+    data = [(img_name, *res) for img_name, results in results_dict.items() for res in results]
+
     # Convert the list into a DataFrame
-    df = pd.DataFrame(data, columns=["image_name", "bbox"])
-    
+    df = pd.DataFrame(data, columns=["image_name", "bbox", "score"])
+
     # Write the DataFrame to a CSV file
     df.to_csv(os.path.join(output_dir, 'results.csv'), index=False)
+
     
 
 if __name__ == '__main__':
