@@ -57,7 +57,7 @@ def mock_detector(model, image_name, output_dir):
     result_name = basename + "_result.jpg"
     result_name = os.path.join(output_dir, result_name)
     show_result(image, results, model.CLASSES, out_file=result_name)
-
+    print(results)
     return results
 
 def create_base_dir(dest):
