@@ -36,20 +36,19 @@ def parse_results(results):
     # Initialize an empty list to store all bounding boxes and scores
     bboxes_scores = []
 
-    # As the model is specifically trained to detect pedestrians,
-    # results[0] should contain the bounding boxes for the pedestrian class
-    bboxes = results[0]
-    
-    # For each bounding box
-    for bbox in bboxes:
-        # The last element is the score, the others are the coordinates
-        score = float(bbox[-1])
-        bbox = tuple(map(int, bbox[:-1]))
+    # For each class's result
+    for class_result in results:
+        # For each bounding box
+        for bbox in class_result:
+            # The last element is the score, the others are the coordinates
+            score = float(bbox[-1])
+            bbox = tuple(map(int, bbox[:-1]))
 
-        # Append to the list as a tuple
-        bboxes_scores.append((bbox, score))
+            # Append to the list as a tuple
+            bboxes_scores.append((bbox, score))
 
     return bboxes_scores
+
 
 
 def mock_detector(model, image_name, output_dir):
