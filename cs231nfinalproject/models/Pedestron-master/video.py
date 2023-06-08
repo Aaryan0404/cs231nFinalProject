@@ -21,7 +21,7 @@ def generate_video(image_folder, video_name, fps):
     frame = cv2.imread(images[0])
     height, width, layers = frame.shape
 
-    video = cv2.VideoWriter(video_name, cv2.VideoWriter_fourcc(*'DIVX'), fps, (width,height))
+    video = cv2.VideoWriter(video_name, cv2.VideoWriter_fourcc(*'avc1'), fps, (width,height))
 
     for image in images:
         video.write(cv2.imread(image))
