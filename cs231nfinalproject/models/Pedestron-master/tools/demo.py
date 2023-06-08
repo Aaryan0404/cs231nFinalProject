@@ -37,7 +37,7 @@ def parse_results(result):
     bboxs = result[0]
     bboxes_coords = []
     # For each class's result
-    for bbox in bboxs:
+    for bbox in bboxs[0]:
         print(bbox)
         # from an array of five elements, extract the first four
         # which are the bounding box coordinates
