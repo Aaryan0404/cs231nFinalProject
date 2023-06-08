@@ -1,0 +1,153 @@
+image_name,bboxs_coords
+clip13/frame35.png,"[array([104.508675, 326.57883 , 121.70004 , 373.1632  ], dtype=float32), array([132.82118, 330.1815 , 148.96696, 374.2068 ], dtype=float32)]"
+clip13/frame30.png,"[array([125.922035, 331.8283  , 142.21965 , 375.3336  ], dtype=float32)]"
+clip13/frame25.png,"[array([144.81602, 335.31403, 160.37007, 376.4645 ], dtype=float32), array([168.21272, 337.89694, 181.86938, 375.55145], dtype=float32)]"
+clip13/frame100.png,[]
+clip13/frame118.png,[]
+clip13/frame96.png,[]
+clip13/frame89.png,[]
+clip13/frame71.png,[]
+clip13/frame54.png,"[array([  6.3237267, 298.16638  ,  28.095737 , 360.0812   ], dtype=float32)]"
+clip13/frame39.png,"[array([ 86.8135 , 322.17313, 104.89289, 371.96616], dtype=float32), array([115.680725, 326.0497  , 133.24908 , 372.8546  ], dtype=float32)]"
+clip13/frame53.png,"[array([ 12.565459, 300.98068 ,  33.748722, 362.23364 ], dtype=float32)]"
+clip13/frame142.png,"[array([261.33957, 354.76224, 269.371  , 375.41318], dtype=float32)]"
+clip13/frame119.png,[]
+clip13/frame87.png,[]
+clip13/frame144.png,"[array([258.29584, 356.2143 , 266.39194, 377.0322 ], dtype=float32)]"
+clip13/frame18.png,"[array([167.68999, 340.62906, 181.64569, 377.69733], dtype=float32), array([188.4165 , 342.9024 , 200.99101, 377.00616], dtype=float32)]"
+clip13/frame64.png,[]
+clip13/frame56.png,"[array([  0.      , 295.78986 ,  16.649956, 358.74945 ], dtype=float32)]"
+clip13/frame99.png,[]
+clip13/frame76.png,[]
+clip13/frame62.png,[]
+clip13/frame7.png,"[array([215.29968, 346.0173 , 227.39598, 376.86124], dtype=float32)]"
+clip13/frame108.png,[]
+clip13/frame24.png,"[array([148.73952, 335.20023, 164.63507, 377.063  ], dtype=float32)]"
+clip13/frame88.png,[]
+clip13/frame82.png,[]
+clip13/frame117.png,[]
+clip13/frame67.png,[]
+clip13/frame150.png,"[array([248.16888, 350.9224 , 257.9897 , 377.48645], dtype=float32)]"
+clip13/frame81.png,[]
+clip13/frame95.png,[]
+clip13/frame52.png,"[array([ 18.213783, 303.64352 ,  39.23979 , 363.45508 ], dtype=float32)]"
+clip13/frame74.png,[]
+clip13/frame133.png,[]
+clip13/frame73.png,[]
+clip13/frame132.png,[]
+clip13/frame8.png,[]
+clip13/frame11.png,[]
+clip13/frame112.png,[]
+clip13/frame83.png,[]
+clip13/frame36.png,"[array([ 99.923904, 325.72592 , 117.54354 , 372.90186 ], dtype=float32), array([128.72682, 329.45334, 145.23747, 373.8522 ], dtype=float32)]"
+clip13/frame50.png,"[array([ 29.362726, 307.05722 ,  50.2725  , 366.11685 ], dtype=float32)]"
+clip13/frame91.png,[]
+clip13/frame68.png,[]
+clip13/frame92.png,[]
+clip13/frame21.png,"[array([158.75494, 337.6932 , 173.32373, 376.63397], dtype=float32)]"
+clip13/frame49.png,"[array([ 35.40126 , 310.48727 ,  55.243317, 367.09793 ], dtype=float32)]"
+clip13/frame34.png,"[array([108.78518, 327.39423, 125.3126 , 373.38437], dtype=float32)]"
+clip13/frame29.png,"[array([128.35233, 331.77362, 144.7444 , 374.68976], dtype=float32), array([153.3346 , 333.97635, 168.45789, 374.8782 ], dtype=float32)]"
+clip13/frame137.png,"[array([268.2613 , 352.1253 , 276.7445 , 375.12396], dtype=float32)]"
+clip13/frame121.png,"[array([288.6073 , 353.82428, 296.3431 , 374.776  ], dtype=float32)]"
+clip13/frame38.png,"[array([ 91.01733, 322.66928, 108.60144, 371.5977 ], dtype=float32), array([119.78479, 326.1229 , 137.89014, 372.81042], dtype=float32)]"
+clip13/frame84.png,[]
+clip13/frame3.png,"[array([224.5223 , 347.20377, 235.60625, 377.7208 ], dtype=float32), array([217.41388, 345.87704, 228.7327 , 376.81754], dtype=float32), array([207.27989, 346.71548, 219.34863, 377.92792], dtype=float32)]"
+clip13/frame23.png,"[array([151.84154, 337.28363, 166.61218, 377.264  ], dtype=float32)]"
+clip13/frame6.png,[]
+clip13/frame122.png,"[array([288.50894, 354.39935, 296.20624, 375.78156], dtype=float32)]"
+clip13/frame110.png,[]
+clip13/frame145.png,[]
+clip13/frame143.png,"[array([260.1652 , 355.6727 , 268.14722, 376.3099 ], dtype=float32)]"
+clip13/frame111.png,[]
+clip13/frame27.png,"[array([161.18669, 335.99796, 176.05951, 375.94565], dtype=float32), array([136.66133, 334.19928, 153.60971, 376.4575 ], dtype=float32)]"
+clip13/frame4.png,[]
+clip13/frame75.png,[]
+clip13/frame55.png,"[array([  0.7739898, 296.60614  ,  22.812372 , 358.75443  ], dtype=float32)]"
+clip13/frame77.png,[]
+clip13/frame102.png,[]
+clip13/frame43.png,"[array([ 67.16252, 316.4539 ,  86.2543 , 369.97464], dtype=float32), array([ 98.40272 , 323.38507 , 116.246185, 371.1373  ], dtype=float32)]"
+clip13/frame125.png,[]
+clip13/frame98.png,[]
+clip13/frame19.png,"[array([164.60452, 339.45593, 179.38173, 378.25354], dtype=float32)]"
+clip13/frame90.png,[]
+clip13/frame79.png,[]
+clip13/frame136.png,[]
+clip13/frame16.png,"[array([173.13042, 340.03207, 187.07573, 376.81934], dtype=float32), array([193.04321, 341.41916, 205.78853, 376.7578 ], dtype=float32), array([156.03392, 338.7332 , 168.65755, 371.6199 ], dtype=float32)]"
+clip13/frame13.png,[]
+clip13/frame151.png,"[array([246.68909, 349.9103 , 256.8222 , 377.1945 ], dtype=float32)]"
+clip13/frame42.png,"[array([ 71.797714, 318.79938 ,  90.65385 , 371.12704 ], dtype=float32), array([102.88497, 325.33347, 120.86003, 372.11502], dtype=float32)]"
+clip13/frame48.png,"[array([ 40.584393, 311.57156 ,  60.750286, 368.10605 ], dtype=float32)]"
+clip13/frame32.png,"[array([117.46113, 329.70755, 134.04613, 374.9977 ], dtype=float32), array([144.36894, 333.42673, 160.0967 , 375.4986 ], dtype=float32), array([ 98.30172, 330.31573, 112.52508, 368.31476], dtype=float32)]"
+clip13/frame44.png,"[array([ 62.65514, 316.326  ,  82.0263 , 369.95712], dtype=float32)]"
+clip13/frame1.png,"[array([228.3084 , 347.62314, 239.11955, 376.95233], dtype=float32), array([221.9992 , 345.80893, 232.88974, 376.1764 ], dtype=float32), array([213.86182, 346.94373, 226.52237, 377.715  ], dtype=float32)]"
+clip13/frame115.png,[]
+clip13/frame140.png,"[array([263.8842 , 354.46094, 271.6815 , 374.91968], dtype=float32)]"
+clip13/frame123.png,"[array([287.04648, 356.00955, 294.56683, 376.758  ], dtype=float32)]"
+clip13/frame51.png,"[array([ 23.98671 , 305.95944 ,  44.463306, 364.64914 ], dtype=float32)]"
+clip13/frame129.png,[]
+clip13/frame130.png,[]
+clip13/frame60.png,[]
+clip13/frame65.png,[]
+clip13/frame103.png,[]
+clip13/frame78.png,[]
+clip13/frame135.png,"[array([270.85092, 352.6618 , 279.26422, 375.20584], dtype=float32)]"
+clip13/frame126.png,[]
+clip13/frame85.png,[]
+clip13/frame28.png,"[array([133.03914, 333.36505, 149.39226, 375.81937], dtype=float32), array([157.74028, 335.15173, 172.422  , 375.6833 ], dtype=float32)]"
+clip13/frame31.png,"[array([122.319534, 330.31772 , 138.57132 , 375.17462 ], dtype=float32), array([103.17552, 330.91455, 117.48022, 368.70346], dtype=float32), array([148.89961, 336.8545 , 163.60341, 375.53452], dtype=float32)]"
+clip13/frame40.png,"[array([ 82.345764, 320.6107  , 100.44086 , 371.8359  ], dtype=float32), array([111.99034, 324.9696 , 130.06752, 372.89456], dtype=float32)]"
+clip13/frame128.png,"[array([280.656  , 356.2672 , 287.69412, 376.37195], dtype=float32)]"
+clip13/frame17.png,"[array([170.81566, 340.78116, 184.66295, 377.39355], dtype=float32), array([190.64073, 342.34915, 203.20052, 376.3769 ], dtype=float32), array([153.5653 , 339.59555, 166.51285, 372.35114], dtype=float32)]"
+clip13/frame22.png,"[array([155.53027, 336.70264, 170.5156 , 377.0377 ], dtype=float32)]"
+clip13/frame120.png,"[array([289.9543 , 354.03632, 297.62628, 374.7477 ], dtype=float32)]"
+clip13/frame26.png,"[array([140.75717, 335.37933, 157.18765, 376.69028], dtype=float32)]"
+clip13/frame41.png,"[array([ 76.95757 , 320.12552 ,  95.561905, 371.552   ], dtype=float32), array([106.84638, 325.03598, 125.55111, 372.7825 ], dtype=float32)]"
+clip13/frame146.png,[]
+clip13/frame58.png,[]
+clip13/frame20.png,"[array([160.88644, 338.7505 , 175.74113, 377.0861 ], dtype=float32)]"
+clip13/frame45.png,"[array([ 57.194233, 316.5612  ,  76.1826  , 370.33084 ], dtype=float32)]"
+clip13/frame97.png,[]
+clip13/frame86.png,[]
+clip13/frame72.png,[]
+clip13/frame80.png,[]
+clip13/frame104.png,"[array([306.04297, 352.5188 , 313.40112, 373.72128], dtype=float32)]"
+clip13/frame59.png,[]
+clip13/frame131.png,[]
+clip13/frame139.png,[]
+clip13/frame61.png,[]
+clip13/frame0.png,"[array([230.96814, 347.29968, 241.25975, 376.343  ], dtype=float32), array([223.0865 , 345.4287 , 233.8945 , 375.19833], dtype=float32)]"
+clip13/frame141.png,"[array([262.60004, 351.0661 , 271.09515, 374.8952 ], dtype=float32)]"
+clip13/frame113.png,[]
+clip13/frame37.png,"[array([ 96.284386, 324.03104 , 114.15901 , 372.7127  ], dtype=float32), array([124.57245, 327.77267, 142.1068 , 373.563  ], dtype=float32)]"
+clip13/frame149.png,"[array([249.7533 , 352.08868, 258.69617, 377.6922 ], dtype=float32)]"
+clip13/frame57.png,[]
+clip13/frame9.png,"[array([211.3206 , 344.17316, 223.4496 , 376.0618 ], dtype=float32), array([193.93596, 342.30457, 207.3349 , 376.21698], dtype=float32), array([178.2928 , 338.05545, 191.51479, 372.6945 ], dtype=float32)]"
+clip13/frame5.png,"[array([220.40813, 346.16803, 231.96646, 376.9728 ], dtype=float32)]"
+clip13/frame147.png,[]
+clip13/frame63.png,[]
+clip13/frame109.png,[]
+clip13/frame33.png,"[array([112.34007, 328.4836 , 128.87756, 373.98178], dtype=float32), array([139.7884 , 332.89465, 155.17592, 374.87787], dtype=float32)]"
+clip13/frame106.png,[]
+clip13/frame101.png,[]
+clip13/frame94.png,[]
+clip13/frame12.png,[]
+clip13/frame46.png,"[array([ 51.008625, 313.94434 ,  70.52111 , 369.63095 ], dtype=float32)]"
+clip13/frame124.png,[]
+clip13/frame47.png,"[array([ 45.48771, 313.51077,  65.23615, 369.03995], dtype=float32)]"
+clip13/frame15.png,"[array([176.9565 , 340.75986, 190.00177, 376.55914], dtype=float32), array([160.44814, 340.98016, 172.34203, 372.08575], dtype=float32), array([195.45224, 341.9686 , 208.50851, 376.85593], dtype=float32)]"
+clip13/frame134.png,[]
+clip13/frame93.png,[]
+clip13/frame105.png,[]
+clip13/frame114.png,[]
+clip13/frame70.png,[]
+clip13/frame69.png,[]
+clip13/frame107.png,[]
+clip13/frame148.png,"[array([250.71123, 351.04233, 260.18597, 377.6575 ], dtype=float32)]"
+clip13/frame66.png,[]
+clip13/frame116.png,"[array([294.45078, 350.65924, 303.3425 , 374.09418], dtype=float32)]"
+clip13/frame138.png,[]
+clip13/frame127.png,[]
+clip13/frame2.png,"[array([226.99112, 347.68842, 237.14168, 377.22647], dtype=float32), array([219.89561, 345.88876, 230.80032, 376.48584], dtype=float32), array([211.31844, 346.74765, 223.86623, 377.90906], dtype=float32)]"
+clip13/frame10.png,"[array([208.00917, 342.93665, 220.7645 , 375.2876 ], dtype=float32), array([174.8228 , 338.34442, 187.7771 , 371.78546], dtype=float32), array([191.18735, 341.3185 , 204.45053, 375.59778], dtype=float32)]"
+clip13/frame14.png,[]
