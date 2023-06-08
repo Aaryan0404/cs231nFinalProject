@@ -64,9 +64,12 @@ def run_detector_on_dataset():
     
     results_dict = {}
     prog_bar = mmcv.ProgressBar(len(eval_imgs))
+    int = 0
     for im in eval_imgs:
         result = mock_detector(model, im, output_dir)
-        print(result)
+        if (int == 0):
+            print(result)
+            int = 1
         results_dict.update(result)
         prog_bar.update()
     
